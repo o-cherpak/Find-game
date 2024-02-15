@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <ul class="tab">
+            <li class="tab__item">SCORE :</li>
+
+            <li class="tab__item">
+                <button class="restart-button">Restart</button>
+            </li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="grid">
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+
+            <div class="grid__card">
+                <div class="card__img"></div>
+            </div>
+          </div>
+
+        <div class="message">
+            <h1 class="message__title">Find Me</h1>
+            <ul class="menu message__description">
+                <li class="menu__item">
+                    <button class="menu__button menu__button--start">Start game</button>
+                </li>
+
+                <li class="menu__item">
+                    <button class="menu__button menu__button--rules">Rules</button>
+                </li>
+
+                <div class="rules">
+                    <p class="rules__description">
+                        <span>Easy (12 Cards):</span>
+                        Setup: Arrange 12 cards face down in a grid.
+                        Gameplay: On your turn, flip over two cards. If they match, keep them both and take another turn.
+                        Winning: You win by 3 points.
+                    <p class="rules__description">
+                        <span>Medium (12 Cards, Timed):</span>
+                        Setup: Same as Easy.
+                        Gameplay: Your have less time to see each card before they are flipped back down.
+                        Winning: You win by 3 points.</p>
+                    <p class="rules__description">
+                        <span>Hard (24 Cards):</span>
+                        Setup: Arrange 24 small cards face down in a grid
+                        Gameplay: More cards.
+                        Winning: You win by 5 points.</p>
+                </div>
+
+                <li class="menu__item">
+                    <div class="slider">
+                        <input 
+                        type="range" 
+                        min="1" max="3" 
+                        value="1" 
+                        class="slider__line" 
+                        id="difficultySlider"
+                        >
+
+                        <div class="slider__levels">
+                            <span class="slider__ez">Easy</span>
+                            <span class="slider__mid">Medium</span>
+                            <span class="slider__dif">Difficult</span>
+                        </div>
+                </li>
+            </ul>
+            <p class="message__description message__description--win">You win, huraaaaa</p>
+            <p class="message__description message__description--lose">Damh, you lose!</p>
+            <p class="message__score">Your Score 0/4</p>
+        </div>
+    </div>          
+</body>
+
+<script src="./script.js"></script>
+
+</html>
