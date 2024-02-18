@@ -1,7 +1,14 @@
+$tablet-col:  4;
+$mobile-col: 3;
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Bangers", sans-serif;
+}
+
+body {
+    overflow: hidden;
 }
 
 .tab {
@@ -30,8 +37,8 @@
 
 .grid {
     display: none;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, auto); 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto); 
     gap: 40px;
     padding: 30px;
     height: 90%;
@@ -96,7 +103,6 @@
         font-size: 88px;
         text-align: center;
         color: orange;
-        
     }
 
     &__score {
@@ -159,12 +165,11 @@
     display: block;
 
     &__line {
-        width: 50%;
-        
+        width: 80%;
     }
 
     &__levels {
-        width: 250px;
+        width: 90%;
         font-size: 23px;
         display: flex;
         justify-content: space-between;
@@ -218,3 +223,80 @@
         font-weight: bold;
     }
 }
+
+@media (max-width: 1200px) {
+    .rules__description--hard {
+        display: none;
+    }
+
+    .menu__button {
+        width: 100%;
+    }
+
+    .slider__dif {
+        display: none;
+    } 
+
+    .grid {
+        grid-template-columns: repeat($tablet-col, 1fr);
+        gap: 4%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .message {
+        height: 500px;
+    }
+
+    .menu__button {
+        width: 100%;
+    }
+
+    .slider__line {
+        width: 100%;
+    }
+
+    .slider__levels{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+
+        &__mid {
+            margin-left: 0;
+        }
+    
+        &__dif {
+            padding-left: 0;
+        }
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .rules {
+        padding-bottom: 100px;
+        gap: 20px;
+    }
+
+    .message {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.83); 
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+        gap: 10px;
+        height: calc(100vh - 100px);
+    }
+}
+  

@@ -142,6 +142,7 @@ slider.addEventListener("input", function() {
     console.log(value);
 });
 
+
 function startGame() {
     gameStart = true;
     message.style.display = 'none';
