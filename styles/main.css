@@ -254,6 +254,5 @@ body {
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
     gap: 10px;
-    height: calc(100vh - 100px);
   }
 }/*# sourceMappingURL=main.css.map */
