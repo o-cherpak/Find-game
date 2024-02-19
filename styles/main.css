@@ -250,6 +250,11 @@ body {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.83);
   }
+  .message__description--win, .message__description--lose {
+    padding: 10px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
   .grid {
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;

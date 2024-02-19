@@ -1,3 +1,18 @@
+const difficultySlider = document.getElementById('difficultySlider');
+
+function setMaxAttribute() {
+    if (window.matchMedia("(max-width: 1200px)").matches) {
+        difficultySlider.setAttribute("max", "2");
+    } else {
+        difficultySlider.setAttribute("max", "3");
+    }
+}
+
+setMaxAttribute();
+
+window.addEventListener('resize', setMaxAttribute);
+
+
 const firstItemsPool = [
     {
         name: 'camera',
