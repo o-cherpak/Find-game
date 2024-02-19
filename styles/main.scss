@@ -37,8 +37,8 @@ body {
 
 .grid {
     display: none;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto); 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto); 
     gap: 40px;
     padding: 30px;
     height: 90%;
